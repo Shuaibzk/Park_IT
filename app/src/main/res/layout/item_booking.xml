@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--client my bookings layout(each booking)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f9f9f9"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/dateTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date &amp; Time"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/lotText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lot: " />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: " />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: "
+        android:textStyle="italic"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/confirmBookingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Booking"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/cancelBookingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Booking"/>
+
+        <Button
+            android:id="@+id/giveReviewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give Review"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

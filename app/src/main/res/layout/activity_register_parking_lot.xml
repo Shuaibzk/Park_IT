@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registerParkingScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/registerParkingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/registerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register New Parking Lot"
+            android:textSize="24sp"
+            android:textColor="#2C3E50"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/lotNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parking Lot Number"
+            android:textColor="#2C3E50"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/latitudeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latitude"
+            android:inputType="numberDecimal"
+            android:textColor="#2C3E50"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/longitudeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitude"
+            android:inputType="numberDecimal"
+            android:textColor="#2C3E50"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/priceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price per Hour"
+            android:inputType="numberDecimal"
+            android:textColor="#2C3E50"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/spaceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Number of Spaces"
+            android:inputType="number"
+            android:textColor="#2C3E50"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select District"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/districtSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/descriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description (Optional)"
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColor="#2C3E50"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/submitParkingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

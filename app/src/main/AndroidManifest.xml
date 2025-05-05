@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--  Internet Permissions    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ParkingLotBookingSystem"
+        tools:targetApi="31">
+
+        <!--   API KEY     -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDwBY3yYYeq7TYxafhR8lSEawEHdV_v5-Y" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ParkingLotBookingSystem">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".ClientHomeActivity"/>
+        <activity android:name=".OwnerHomeActivity"/>
+        <activity android:name=".AdminHomeActivity"/>
+        <activity android:name=".RegisterParkingLotActivity"/>
+        <activity android:name=".ApproveParkingLotsActivity"/>
+        <activity android:name=".ViewMyParkingLotsActivity"/>
+        <activity android:name=".EditParkingLotActivity"/>
+        <activity android:name=".OwnerProfileActivity"/>
+        <activity android:name=".ClientFilterActivity"/>
+        <activity android:name=".ClientSearchResultActivity"/>
+        <activity android:name=".ClientMapActivity"/>
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".ParkingListActivity" />
+        <activity android:name=".MyBookingsActivity" />
+        <activity android:name=".ClientReportActivity" />
+        <activity android:name=".OwnerReportActivity" />
+        <activity android:name=".AdminVerifyComplaintsActivity" />
+        <activity android:name=".AdminBanUsersActivity" />
+        <activity android:name=".ClientProfileActivity" />
+        <activity android:name=".PaymentHistoryActivity" />
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".LotReviewsActivity" />
+        <activity android:name=".ViewUsersActivity" />
+        <activity android:name=".ManageParkingLotsActivity" />
+        <activity android:name=".CheckBookingsActivity" />
+        <activity android:name=".OwnerBookingHistoryActivity" />
+
+
+
+    </application>
+
+</manifest>

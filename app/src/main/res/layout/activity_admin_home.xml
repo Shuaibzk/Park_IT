@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adminHomeScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/adminHomeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:id="@+id/logoClient"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/parkit_logo"
+            android:contentDescription="ParkIt Logo"
+            android:adjustViewBounds="true" />
+
+
+        <TextView
+            android:id="@+id/welcomeAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Admin!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/manageUsersBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="View and Modify Owners/Clients"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/approveParkingLotsBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Approve Owners Parking Lot"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/verifyComplaintsBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Verify Complaints"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/banUserBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Ban User"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/manageLotsBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Manage Parking Lots"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@android:color/white"
+            android:text="Logout" />
+    </LinearLayout>
+</ScrollView>

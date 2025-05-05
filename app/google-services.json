@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "555688448430",
+    "project_id": "parkinglot-booking-system",
+    "storage_bucket": "parkinglot-booking-system.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555688448430:android:a92b2ac4b427876efdf83f",
+        "android_client_info": {
+          "package_name": "com.example.parkinglotbookingsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSINfu22f9vkcCgW6TpmTzdjIjamyQOjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

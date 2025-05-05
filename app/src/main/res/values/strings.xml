@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ParkingLot Booking System</string>
+    <string-array name="status_array">
+        <item>Active</item>
+        <item>Banned</item>
+    </string-array>
+
+</resources>

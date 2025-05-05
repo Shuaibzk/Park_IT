@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--layout of all parking lot in a list for booking(client)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:elevation="2dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/lotNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lot: A1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: 50 BDT/hr"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/availableSpacesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available: 5"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description goes here"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView
+        android:id="@+id/ratingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating: N/A"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/reviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Review: N/A"
+        android:layout_marginBottom="8dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/mapBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bookNowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:backgroundTint="#2196F3"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>

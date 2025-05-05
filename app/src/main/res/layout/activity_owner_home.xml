@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ownerHomeScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F2FA">
+
+    <LinearLayout
+        android:id="@+id/ownerHomeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:id="@+id/logoOwner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/parkit_logo"
+            android:contentDescription="ParkIt Logo"
+            android:adjustViewBounds="true" />
+
+
+        <TextView
+            android:id="@+id/welcomeOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/registerLotBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Register New Parking Lot"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewMyLotsBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="View My Parking Lots"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/bookingHistoryBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Booking History"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/ownerProfileBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Profile" />
+
+        <Button
+            android:id="@+id/generalOwnerReportBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="General Report"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/clientReportBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Report Client"
+            android:backgroundTint="@color/design_default_color_error"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
